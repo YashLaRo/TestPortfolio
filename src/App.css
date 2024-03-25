@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,46 @@
   to {
     transform: rotate(360deg);
   }
+} */
+body {
+  background-color: #000000 !important; 
+  color: #ffffff; 
 }
+#homeinfo,#navbarSupportedContent,#aboutme,#projects,#Skills{
+  color: #ffffff ;
+}
+
+.gradient-text{
+  -webkit-background-clip: text;
+  @apply bg-gradient-to-t from-blue-500 to-cyan-400 text-transparent; 
+}
+#pic{
+  
+  height: 200px;
+  width: 200px;
+  border-radius: 60%;
+}
+.con-border{
+  padding: 1.25rem;
+  flex: 1;
+  border-radius: 2rem;
+  border: #ffffff;
+  border-color: #ffffff;
+  text-align: center;
+  
+}
+.con-border{
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #ffffff;
+  }
+  li{
+    font-size: 19px;
+  }  
+  #aboutme li{
+    padding-left: 180px;
+    margin-top: 12px;
+  }

@@ -1,25 +1,52 @@
 import logo from './logo.svg';
+import Photo_1 from './photo_1.jpg';
 import './App.css';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { bootstrap } from 'bootstrap';
+
+import {ContactForm} from './components/ContactForm';
+import Typed from "typed.js"
+import React from 'react';
+import { NavBar } from './components/Navbar';
+import { MyInfo } from './components/MyInfo';
+import { Skills } from './components/Skills';
+import { AboutMe } from './components/AboutMe';
+import { ProjectInfo } from './components/ProjectInfo';
 
 function App() {
+
+
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+  };
+
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <header>
+        <NavBar></NavBar>
+      </header >
+        <MyInfo></MyInfo>
+        <ProjectInfo></ProjectInfo>
+        <Skills></Skills>
+        <AboutMe></AboutMe>
+
+
+      
+      <ContactForm ></ContactForm>
+
+    </>
   );
+
+
 }
 
 export default App;
